@@ -1,0 +1,13 @@
+name: "Azure_Backend_Git_Actions"
+on:
+    push:
+        branches:
+            - main
+jobs:
+    auth:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: azure/login@v1
+              with:
+                creds: ${{secrets.AZURE_CREDENTIALS}}
