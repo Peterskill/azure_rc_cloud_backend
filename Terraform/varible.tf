@@ -8,7 +8,3 @@ variable "resource_group_name" {
   default = "sps-cloud-rc-azure"
 }
 
-variable "accout_name" {
-  type = string
-
-}
