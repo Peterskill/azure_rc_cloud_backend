@@ -10,7 +10,7 @@ resource "azurerm_cosmosdb_account" "cosmo_account" {
   }
   geo_location {
     location = var.region
-    failover_priority = 1
+    failover_priority = 0
   }
   capabilities {
     name = "EnableServerless"
