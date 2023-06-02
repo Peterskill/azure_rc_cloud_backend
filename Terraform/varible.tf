@@ -1,6 +1,6 @@
 variable "region" {
   type = string
-  default = "can-central"
+  default = "canadacentral"
 }
 
 variable "resource_group_name" {
